@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    background-color: #E5E5FD;
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;
+}
+
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 80px;
+}
+
+.image-container{
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/1003/420/desktop-wallpaper-pin-on-saddam-hussain-world-leaders.jpg);
+    background-size: cover;
+    background-position: center 0%;
+    border-radius: 50%;
+    /* border: 4px solid #1d1e4c; */
+    overflow: hidden;
+}
+
+.image-container{
+    width: 300px;
+    height: 320px;
+}
+
+.name-date h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: -3px 2px 5px #36375d;
+    color: #1d1e4c;
+    text-transform: uppercase;
+}
+
+.name-date h4{
+    font-size: 30px;
+    text-align: end;
+    color: #1d1e4c;
+    font-weight: 500;
+}
+
+.about{
+    margin-top: 50px;
+}
+
+.about h2{
+    text-transform: capitalize;
+    display: inline;
+    font-size: 2.25rem;
+    border-bottom: 3px solid #1d1e4c;
+    padding: 5px;
+    color: #272739;
+    font-weight: bold;
+}
+
+.about p{
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #1a1a25;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+}
+
+.part{
+    margin-top: 30px;
+}
+
+.part h4{
+    text-transform: capitalize;
+    display: inline;
+    font-size: 1.5rem;
+    border-bottom: 3px solid #1d1e4c;
+    padding: 5px;
+    color: #272739;
+    font-weight: bold;
+}
+
+footer p{
+    margin: 30px auto;
+    text-align: center;
+    color: #1a1a25;
+}
+
+footer p a, footer p a:visited{
+    text-decoration: none;
+    color: #1a1a25;
+}
+
+footer p a:hover, footer p a:focus{
+    color: #434353;
+}
+
+@media (max-width: 800px) {
+    .heading{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about, .part{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+@media (max-width:530px) {
+    .heading{
+        margin-top: 30px;
+    }
+
+    .image-container{
+        width: 280px;
+        height: 300px;
+    }
+
+    .name-date{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .name-date h1{
+        text-align: center;
+    }
+}
